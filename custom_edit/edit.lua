@@ -8,8 +8,6 @@ s=Vector2(guiGetScreenSize())
 
 
 
-
-
 addEventHandler("onClientRender",root,function()
     for k,v in ipairs(edits)do
         if v["visible"] then
