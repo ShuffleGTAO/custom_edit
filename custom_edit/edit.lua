@@ -170,6 +170,7 @@ addEventHandler("onClientCharacter",root,function(char)
                         if tonumber(string.len(customedit.getText(k)))<tonumber(v["maxLength"]) then
                             v["txt"]=v["txt"]..char
                             v["cursor"]=getTickCount()
+print("Obecnie :"..string.len(customedit.getText(k)).." | Max:"..v["maxLength"])
                             triggerEvent("onCustomEditType",localPlayer,v["id"])
                         end
                     end
