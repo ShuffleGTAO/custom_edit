@@ -181,5 +181,9 @@ end)
 
 
 
-
+addCommandHandler("testuje",function()
+for k,v in ipairs(edits) do
+   print(v["active"])
+end
+end)
 
