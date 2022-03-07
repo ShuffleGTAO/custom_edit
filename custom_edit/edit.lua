@@ -167,7 +167,7 @@ addEventHandler("onClientCharacter",root,function(char)
             if customedit.validChar(char) then
                 for k,v in ipairs(edits)do
                     if v["active"] then
-                        if tonumber(string.len(customedit.getText(k)))<tonumber(v["maxLength"]) then
+                        if tonumber(string.len(customedit.getText(v["id"])))<tonumber(v["maxLength"]) then
                             v["txt"]=v["txt"]..char
                             v["cursor"]=getTickCount()
 print("Obecnie :"..string.len(customedit.getText(k)).." | Max:"..v["maxLength"])
