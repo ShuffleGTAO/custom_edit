@@ -181,13 +181,4 @@ end)
 
 
 
-addCommandHandler("testuje",function()
-for k,v in ipairs(edits) do
- if v["active"] then
-   print(v["txt"]..": aktywny")
-else
-print(v["txt"]..": nieaktywny")
-end
-end
-end)
 
