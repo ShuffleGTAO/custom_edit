@@ -73,7 +73,7 @@ function finish()
     fileWrite(meta,xml_content)
     fileClose(meta)
     fileDelete("download.xml")
-    fetchRemote("https://raw.githubusercontent.com/sirphantasm/custom_edit/main/custom_edit/version.txt",function(data,error,sciezka)
+    fetchRemote("",function(data,error,sciezka)
         if error==0 then
             if fileExists(sciezka) then
                 fileDelete(sciezka)
@@ -89,7 +89,7 @@ end
 
 
 function checkVersion()
-    fetchRemote("https://raw.githubusercontent.com/sirphantasm/custom_edit/main/custom_edit/version.txt",function(data,error,sciezka)
+    fetchRemote("https://raw.githubusercontent.com/ShuffleGTAO/custom_edit/main/custom_edit/version.txt",function(data,error,sciezka)
         if error==0 then
             if not fileExists(sciezka) then
                 local file=fileCreate(sciezka)
