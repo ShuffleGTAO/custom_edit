@@ -183,7 +183,7 @@ end)
 
 addCommandHandler("testuje",function()
 for k,v in ipairs(edits) do
-   print(v(["txt"])..":"..v["active"])
+   print(v["txt"]..":"..v["active"])
 end
 end)
 
